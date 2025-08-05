@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Light Cone Studio is a one-person game studio focused on atmospheric experiences and technical exploration.">
     <title>Light Cone Studio</title>
     <style>
-        .notice {}
-
         body {
             font-family: 'Courier New', Courier, monospace;
             padding: calc(min(40vh, 40vw));
@@ -17,12 +17,18 @@
         }
 
         .vignette {
-            position: fixed;
+            position: absolute;
+            pointer-events: none;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             box-shadow: 0 0 100vh rgba(0, 0, 0, 0.822) inset;
+            z-index: 9999;
+        }
+
+        h1 {
+            font-size: 1.2em;
         }
 
         .vignette::after {
@@ -37,14 +43,14 @@
         a:hover,
         a:active,
         a:visited {
-            color: #759ac5;
+            color: #c2dcfa;
         }
     </style>
 </head>
 
 <body>
     <div class="vignette"></div>
-    <div class="notice">light cone studio</div>
+    <h1>light cone studio</h1>
     <a href="mailto:contact@lightconestudio.com">contact</a>
 </body>
 
